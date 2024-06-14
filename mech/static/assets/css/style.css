@@ -388,6 +388,12 @@ h6 {
   font-weight: 700;
   color: #fff;
 }
+.cores {
+  display: flex;
+  justify-content: space-around;
+  /* background: #e03a3c; */
+  /* justify-items: normal; */
+}
 
 #hero h2 {
   color: #fff;
@@ -423,7 +429,6 @@ h6 {
 
   #hero h1 {
     font-size: 28px;
-  
   }
 
   #hero h2 {

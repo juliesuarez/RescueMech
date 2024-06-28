@@ -1,77 +1,95 @@
 {% load static %}
 
+<style>
+  /* Global styles */
+  .navbar {
+    /* background-color: #333; Example background color */
+    height: 60px; /* Adjust height as needed */
+    display: flex;
+    justify-content: left; /* Center items horizontally */
+    align-items: left; /* Center items vertically */
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+
+  .logo {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the logo behaves as expected */
+  }
+
+  /* Optional: Adjust margins or paddings as needed */
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo-text {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+
+</style>
+
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top d-flex align-items-center">
   <div class="container d-flex align-items-center">
-    <h1 class="logo me-auto">
-      <a href="/">RESCUEMECH<span>.</span></a>
+      <!-- Logo beside text -->
+      <a href="#" class="logo-link">
+        <img class="logo" alt="Logo" src="{% static 'assets/img/logo.png' %}" />
+      </a>
+    
+    
+    <h1 class="logo-text me-auto" style="color: blue !important;">
+      <a><span><b>RESCUEMECH</b></span></a>
     </h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
+  
+
+    <!-- Navbar -->
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
         <li><a class="nav-link scrollto" href="#team">Team</a></li>
-        <li class="dropdown">
-          <!-- <a href="#"
-            ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-          ></a> -->
+        <!-- <li class="dropdown">
+          <a href="#">
+            <span>Drop Down</span> <i class="bi bi-chevron-down"></i>
+          </a>
           <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
+            <li><a href="#">Drop Down 1</a></li> -->
+            <!-- <li class="dropdown">
+              <a href="#">
+                <span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i>
+              </a> -->
+              <!-- <ul>
                 <li><a href="#">Deep Drop Down 1</a></li>
                 <li><a href="#">Deep Drop Down 2</a></li>
                 <li><a href="#">Deep Drop Down 3</a></li>
                 <li><a href="#">Deep Drop Down 4</a></li>
                 <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
+              </ul> -->
+            <!-- </li>
             <li><a href="#">Drop Down 2</a></li>
             <li><a href="#">Drop Down 3</a></li>
             <li><a href="#">Drop Down 4</a></li>
           </ul>
-        </li>
+        </li> -->
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
-    <!-- .navbar -->
+    <!-- End Navbar -->
 
     <a href="#about" class="get-started-btn scrollto">Get Started</a>
   </div>
 </header>
 <!-- End Header -->
 
+<!-- Second Header or Another Section -->
 <header class="header">
-  <!-- nav-open -->
-
-  <!-- <a href="#">
-    <img
-      class="logo"
-      alt="Omnifood logo"
-      src="{% static 'assets/img/Create.png' %}"
-    />
-  </a> -->
-
-  <nav class="main-nav">
-    <!-- <ul class="main-nav-list">
-      <li><a href="#" class="main-nav-link">How to use it</a></li>
-      <li><a href="#" class="main-nav-link">Services</a></li>
-      <li><a href="#" class="main-nav-link">Testimonials</a></li>
-      <li><a href="#" class="main-nav-link">Pricing</a></li>
-      <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li> -->
-    </ul>
-  </nav>
-
-  <button class="btn-mobile-nav">
-    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-  </button>
+  <!-- Place your content here if this section is intended for another purpose -->
 </header>

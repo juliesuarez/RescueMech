@@ -1,19 +1,20 @@
 {% extends "mainweb/base.html" %} {% load static %} {% block content %}
-
+<style>
+  .circular-img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+  }
+  
+</style>
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
     <div class="row">
-      <div class="col-xl-6">
+      <div class="col-xl-12">
         <div class="cores">
-          <h1>Accessibility</h1>
-
-          <h1>Reliability</h1>
-
-          <h1>Transparency</h1>
-
-          <h1>&</h1>
-          <h1>Customer satisfaction</h1>
+          <h1>Instant Help, Anytime, Anywhere </h1>
         </div>
 
         <!-- <h2>To ease access of mechanical services through the use of mobile Technology </h2> -->
@@ -657,12 +658,12 @@
           The talented and dedicated team that makes our company thrive.
         </p>
       </div>
-
+  
       <div class="row">
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="{% static 'assets/img/team/JULIE.jpg' %}" class="img-fluid" alt="" />
+              <img src="{% static 'assets/img/team/JULIE.jpg' %}" class="img-fluid circular-img" alt="" />
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -676,11 +677,11 @@
             </div>
           </div>
         </div>
-
+  
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="{% static 'assets/img/team/Brian.jpg' %}" class="img-fluid" alt="" />
+              <img src="{% static 'assets/img/team/Brian.jpg' %}" class="img-fluid circular-img" alt="" />
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -690,18 +691,15 @@
             </div>
             <div class="member-info">
               <h4>Brian Kasekulume</h4>
-              <span>co-founder & Mechanic</span>
+              <span>Co-Founder & Mechanic</span>
             </div>
           </div>
         </div>
-
+  
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-
-              <img src="{% static 'assets/img/team/Fred.jpg' %}" class="img-fluid" alt=""
-                style="width: 770px; height: 300px;" />
-
+              <img src="{% static 'assets/img/team/Fred.jpg' %}" class="img-fluid circular-img" alt="" />
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -715,14 +713,11 @@
             </div>
           </div>
         </div>
-
+  
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
-
-              <img src="{% static 'assets/img/team/21753.jpg' %}" class="img-fluid" alt=""
-                style="width: 500px; height: 300px;" />
-
+              <img src="{% static 'assets/img/team/21753.jpg' %}" class="img-fluid circular-img" alt="" />
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -739,6 +734,7 @@
       </div>
     </div>
   </section>
+  
   <!-- End Team Section -->
 
   <!-- ======= Contact Section ======= -->
